@@ -5,3 +5,9 @@ ruby:
   description: Ruby is the fastest growing and most exciting...
   image_url: ruby.gif
   price: 28.00
+  
+coffee:
+  title: CoffeeScript
+  description: Over the last five years, CoffeeScript has taken...
+  image_url: cs.gif
+  price: 21.00

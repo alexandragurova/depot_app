@@ -7,4 +7,8 @@ class Product < ActiveRecord::Base
                             format: { with: %r{\.jpg|png|gif\Z}i, 
                                       message: "must be a URL for JPG, PNG or GIF" }
     validates       :price, numericality: { greater_than_or_equal_to: 0.01 }
+    
+    def self.latest
+        Product.order(:updated_at).last
+    end
 end
