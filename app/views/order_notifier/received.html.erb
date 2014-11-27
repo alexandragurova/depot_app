@@ -1,0 +1,14 @@
+<h3>Book Store Order Notification</h3>
+
+<p>Dear <%= @order.name %></p>
+
+<p>Thank you for your recent order from The Book Store.</p>
+
+<p>You ordered the following items:</p>
+
+<table>
+    <tr><th colspan="2">Description</th><th>Price</th></tr>
+<%= render @order.line_items %>    
+</table>
+
+</p>We'll send you a separate e-mail when your order ships.</p>

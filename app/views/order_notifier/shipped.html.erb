@@ -1,0 +1,10 @@
+<h3>Book Store Order Shipped</h3>
+
+<p>Dear <%= @order.name %></p>
+
+<p>This is just to let you know that we've shipped your recent order: </p>
+
+<table>
+    <tr><th colspan="2">Description</th><th>Price</th></tr>
+<%= render @order.line_items %>    
+</table>

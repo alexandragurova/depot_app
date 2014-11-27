@@ -2,7 +2,7 @@ require 'test_helper'
 
 class ProductsControllerTest < ActionController::TestCase
   setup do
-    @product = products(:ruby)
+    @product = products(:coffee)
     @update = { title: "Lorem ipsum",
                 description: "Dolore sit ame",
                 image_url: "lorem.gif",
