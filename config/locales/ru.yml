@@ -1,0 +1,57 @@
+ru:
+  thanks: "Спасибо за заказ!"
+
+  number:
+    currency:
+      format:
+        unit: "$US"
+        precision: 2
+        separator: ","
+        delimiter: "."
+        format: "%n%&nbsp;%u"
+  activerecord:
+    models:
+      order: "заказ"
+    attributes:
+      order:
+        name: "ФИО"
+        address: "Почтовый адрес"
+        email: "Эл.почта"
+        pay_type: "Способ оплаты"
+    errors:
+      messages:
+        inclusion: "должен быть выбран"
+        blank: "не может быть пустым"
+  errors:
+    template:
+      body: "Были допущены следующие ошибки при заполнении формы:"
+      header:
+        one: "Допущена 1 ошибка при заполнении формы %{model}"
+        other: "Количество ошибок, допущеных при заполнении формы %{model}: %{count}"
+  layouts:
+    application:
+      title: "Книжная полка"
+      home: "Домой"
+      questions: "Вопросы"
+      news: "Новости"
+      contact: "Контакты"
+  store:
+    index:
+      title: "Книжный каталог"
+      add: "В корзину"
+  carts:
+    cart:
+      title: "Корзина"
+      empty: "Очисть корзину"
+      checkout: "Оформить заказ"
+      total: "Итого"
+  orders:
+    new:
+      legend: "Контактные данные"
+    form: 
+      name: "ФИО"
+      address: "Почтовый адрес"
+      email: "Эл.почта"
+      pay_type: "Способ оплаты"
+      pay_prompt: "Выберите способ оплаты"
+      submit: "Подтвердить заказ"
